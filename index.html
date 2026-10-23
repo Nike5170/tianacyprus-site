@@ -179,7 +179,7 @@ footer {
 
 </style>
 </head><body>
-<header class="wrap"><a class="brand" href="#">Tiana Cyprus</a><nav class="nav"><a class="nav-projects" href="#projects">Проекты</a><a class="nav-work" href="#work">Как я работаю</a><a class="nav-contact" href="#contact">Контакты</a></nav><span class="lang">RU / EN</span></header>
+<header class="wrap"><a class="brand" href="#">Tiana Cyprus</a><nav class="nav"><a class="nav-projects" href="#projects">Проекты</a></nav><span class="lang">RU / EN</span></header>
 <main>
 <section class="hero wrap"><div class="hero-copy"><h1>Недвижимость на&nbsp;Северном&nbsp;Кипре</h1></div><figure class="hero-image"><img src="https://tianacyprus.com/assets/img/hero.jpg" alt="Белая терраса у Средиземного моря"></figure></section>
 <section class="about section wrap" id="about"><figure class="about-image"><img src="https://tianacyprus.com/assets/img/tiana-full.jpg" alt="Тиана"></figure><div class="about-copy"><div class="label">ТИАНА</div><h2>Сначала — понять вашу задачу.</h2><p>На Северном Кипре проекты отличаются расположением, форматом и условиями покупки. Я помогу разобраться в вариантах и выбрать то, что подходит именно вам.</p></div></section>
@@ -372,5 +372,33 @@ footer {
   }
   .projects-strip .projects-head { margin-bottom: 20px; }
   .island-copy.wrap { padding-block-start: 72px; }
+}
+
+/* Final responsive navigation, viewport sizing, and footer edge */
+@media (min-width: 761px) {
+  .hero.wrap { height: 100vh; min-height: 100vh; max-height: none; }
+}
+@media (max-width: 760px) {
+  .hero.wrap {
+    height: 100vh;
+    min-height: 100vh;
+    height: 100svh;
+    min-height: 100svh;
+    height: 100dvh;
+    min-height: 100dvh;
+    max-height: none;
+  }
+  .lang::before {
+    content: "·";
+    margin: 0 8px;
+    color: rgba(255,255,255,.58);
+  }
+  footer#contact {
+    width: 100%;
+    margin: 0;
+    overflow: hidden;
+    background-repeat: no-repeat;
+    background-color: var(--paper);
+  }
 }
 </style>
