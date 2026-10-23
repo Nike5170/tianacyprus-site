@@ -184,8 +184,109 @@ footer {
 <section class="hero wrap"><div class="hero-copy"><h1>Недвижимость на&nbsp;Северном&nbsp;Кипре</h1></div><figure class="hero-image"><img src="https://tianacyprus.com/assets/img/hero.jpg" alt="Белая терраса у Средиземного моря"></figure></section>
 <section class="about section wrap" id="about"><figure class="about-image"><img src="https://tianacyprus.com/assets/img/tiana-full.jpg" alt="Тиана"></figure><div class="about-copy"><div class="label">ТИАНА</div><h2>Сначала — понять вашу задачу.</h2><p>На Северном Кипре проекты отличаются расположением, форматом и условиями покупки. Я помогу разобраться в вариантах и выбрать то, что подходит именно вам.</p></div></section>
 <section class="work section wrap" id="work"><div class="work-intro"><h2>Как я работаю</h2><p>Начинаем с разговора. Обсудим, для чего вам нужна недвижимость, что для вас важно и на какой бюджет вы ориентируетесь.</p></div><div class="work-list"><article class="work-step"><span class="work-number">01 /</span><h3>Подбор проектов</h3><p>Подберу варианты под ваш запрос и объясню различия в расположении, сроках и условиях покупки.</p></article><article class="work-step"><span class="work-number">02 /</span><h3>Знакомство с островом</h3><p>Если вы решите приехать, помогу организовать встречу в офисе и знакомство с выбранными проектами.</p></article><article class="work-step"><span class="work-number">03 /</span><h3>Выбор недвижимости</h3><p>Сравним варианты, обсудим ваши вопросы и определим следующий шаг.</p></article><article class="work-step"><span class="work-number">04 /</span><h3>Покупка и сопровождение</h3><p>После выбора проекта компания сопровождает сделку и помогает с вопросами после покупки. Я остаюсь на связи.</p></article></div></section>
-<section class="projects section wrap" id="projects"><div class="projects-head"><h2>Проекты</h2></div><div class="grid"><figure class="card"><img src="https://tianacyprus.com/assets/img/project-01.jpg" alt="Жилой комплекс у моря"></figure><figure class="card"><img src="https://tianacyprus.com/assets/img/project-04.jpg" alt="Комплекс с бассейном"></figure><figure class="card"><img src="https://tianacyprus.com/assets/img/project-02.jpg" alt="Виллы у побережья"></figure><figure class="card"><img src="https://tianacyprus.com/assets/img/project-03.jpg" alt="Вид на жилой комплекс"></figure></div><a class="all-projects" href="/projects/">Смотреть все проекты ↗</a></section>
+<section class="projects section wrap" id="projects">
+  <div class="projects-head"><h2>Выбранные проекты</h2></div>
+  <div class="project-stories">
+    <article class="project-entry project-entry--one" data-project-key="project-01">
+      <figure class="project-image"><img src="https://tianacyprus.com/assets/img/project-01.jpg" alt="Жилой комплекс у моря"></figure>
+      <div class="project-caption"><h3>Название проекта уточняется</h3></div>
+    </article>
+    <article class="project-entry project-entry--two" data-project-key="project-04">
+      <figure class="project-image"><img src="https://tianacyprus.com/assets/img/project-04.jpg" alt="Комплекс с бассейном"></figure>
+      <div class="project-caption"><h3>Название проекта уточняется</h3></div>
+    </article>
+    <article class="project-entry project-entry--three" data-project-key="project-02">
+      <figure class="project-image"><img src="https://tianacyprus.com/assets/img/project-02.jpg" alt="Виллы у побережья"></figure>
+      <div class="project-caption"><h3>Название проекта уточняется</h3></div>
+    </article>
+    <article class="project-entry project-entry--four" data-project-key="project-03">
+      <figure class="project-image"><img src="https://tianacyprus.com/assets/img/project-03.jpg" alt="Вид на жилой комплекс"></figure>
+      <div class="project-caption"><h3>Название проекта уточняется</h3></div>
+    </article>
+  </div>
+</section>
 <section class="island-copy wrap" id="cyprus"><h2>Ритм острова</h2><p>Жить здесь постоянно — не единственный сценарий. Для многих Северный Кипр становится вторым домом, куда возвращаются на несколько месяцев в году.</p></section>
 </main>
 <footer id="contact"><div class="wrap footer-inner"><div class="footer-top"><div class="contacts"><a href="tel:+905356667715">+90 535 666 77 15</a><a href="mailto:tiana.selection@gmail.com">tiana.selection@gmail.com</a></div><nav class="social" aria-label="Социальные сети"><a href="https://wa.me/905356667715">WhatsApp</a><a href="https://t.me/+905356667715">Telegram</a><a href="https://www.instagram.com/tianacyprus/">Instagram</a></nav></div><div class="footer-bottom"><span>North Cyprus</span><span>© Tiana Cyprus 2026</span></div></div></footer>
 </body></html>
+
+<style>
+/* Editorial project publications — preview only */
+.projects.section {
+  padding-top: clamp(44px, 5.5vw, 78px);
+  padding-bottom: clamp(84px, 10vw, 144px);
+}
+.projects-head {
+  margin-bottom: clamp(44px, 6vw, 84px);
+}
+.projects-head h2 {
+  font-family: "Golos Text", sans-serif;
+}
+.project-stories {
+  display: grid;
+  row-gap: clamp(64px, 9vw, 128px);
+}
+.project-entry {
+  display: grid;
+  grid-template-columns: repeat(12, minmax(0, 1fr));
+  column-gap: 20px;
+  align-items: center;
+  margin: 0;
+}
+.project-image {
+  margin: 0;
+  overflow: hidden;
+}
+.project-image img {
+  display: block;
+  width: 100%;
+  height: auto;
+  aspect-ratio: 1.58;
+  object-fit: cover;
+  object-position: center;
+}
+.project-entry--one .project-image { grid-column: 1 / span 7; }
+.project-entry--one .project-caption { grid-column: 9 / span 3; }
+.project-entry--two .project-image { grid-column: 6 / -1; grid-row: 1; }
+.project-entry--two .project-caption { grid-column: 2 / span 3; grid-row: 1; }
+.project-entry--three .project-image { grid-column: 1 / span 6; }
+.project-entry--three .project-caption { grid-column: 8 / span 4; }
+.project-entry--four .project-image { grid-column: 6 / -1; grid-row: 1; }
+.project-entry--four .project-caption { grid-column: 2 / span 3; grid-row: 1; }
+.project-caption h3 {
+  margin: 0;
+  color: var(--ink);
+  font: 400 clamp(19px, 1.65vw, 23px)/1.35 "Golos Text", sans-serif;
+  letter-spacing: -.01em;
+}
+@media (max-width: 760px) {
+  .projects.section {
+    padding-top: 40px;
+    padding-bottom: 76px;
+  }
+  .projects-head { margin-bottom: 30px; }
+  .project-stories { row-gap: 50px; }
+  .project-entry,
+  .project-entry--one,
+  .project-entry--two,
+  .project-entry--three,
+  .project-entry--four {
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    gap: 15px;
+  }
+  .project-image,
+  .project-caption {
+    width: 100%;
+  }
+  .project-image img {
+    aspect-ratio: 1.32;
+    object-fit: cover;
+  }
+  .project-caption h3 {
+    font-size: 19px;
+    line-height: 1.35;
+  }
+}
+</style>
