@@ -544,7 +544,7 @@ p { margin: 0; }
   .position__portrait {
     width: min(100%, 340px);
     max-width: 340px;
-    justify-self: center;
+    justify-self: start;
     margin: 0;
   }
   .position__portrait img { object-position: center; }
