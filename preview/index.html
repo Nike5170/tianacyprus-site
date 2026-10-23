@@ -345,4 +345,32 @@ footer {
   }
   .island-copy.wrap { padding-block-start: 32px; }
 }
+
+/* Restore approved viewport scale and the prior section rhythm */
+.hero.wrap {
+  height: 100vh;
+  min-height: 100vh;
+  max-height: none;
+}
+.projects-strip.projects.section {
+  padding-top: clamp(44px, 5.5vw, 78px);
+  padding-bottom: clamp(84px, 10vw, 144px);
+}
+.projects-strip .projects-head { margin-bottom: 26px; }
+.island-copy.wrap { padding-block-start: clamp(64px, 6vw, 88px); }
+@media (max-width: 760px) {
+  .hero.wrap {
+    height: 100vh;
+    height: 100dvh;
+    min-height: 100vh;
+    min-height: 100dvh;
+    max-height: none;
+  }
+  .projects-strip.projects.section {
+    padding-top: 40px;
+    padding-bottom: 76px;
+  }
+  .projects-strip .projects-head { margin-bottom: 20px; }
+  .island-copy.wrap { padding-block-start: 72px; }
+}
 </style>
