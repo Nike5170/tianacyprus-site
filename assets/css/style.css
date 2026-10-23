@@ -541,8 +541,9 @@ p { margin: 0; }
     padding-bottom: 36px;
   }
   .position__portrait {
-    width: min(78%, 340px);
+    width: min(100%, 340px);
     max-width: 340px;
+    justify-self: center;
     margin: 0;
   }
   .position__portrait img { object-position: center; }
