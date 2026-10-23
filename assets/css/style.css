@@ -560,3 +560,10 @@ p { margin: 0; }
     font: 400 16px/1.6 "Golos Text", sans-serif;
   }
 }
+
+
+/* Keep Hero copy centered when the legacy reveal animation becomes visible. */
+.js .hero__text.reveal.is-in { opacity: 1; transform: translateY(-6vh); }
+@media (max-width: 760px) {
+  .js .hero__text.reveal.is-in { transform: translate(-50%, -50%); }
+}
