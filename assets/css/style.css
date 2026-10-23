@@ -428,6 +428,7 @@ p { margin: 0; }
   background: #697477;
 }
 .hero__text {
+  align-self: center;
   position: relative;
   z-index: 2;
   width: min(90%, 1000px);
