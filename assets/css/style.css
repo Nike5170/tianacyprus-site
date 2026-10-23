@@ -569,3 +569,42 @@ p { margin: 0; }
 @media (max-width: 760px) {
   .js .hero__text.reveal.is-in { transform: translate(-50%, -50%); }
 }
+
+/* Approved final adjustments: full-screen hero and single-line navigation. */
+.hero {
+  height: 100vh;
+  min-height: 100vh;
+}
+
+@media (max-width: 760px) {
+  .hero {
+    height: 100dvh;
+    min-height: 100dvh;
+    max-height: none;
+  }
+
+  .nav {
+    flex-wrap: nowrap;
+    gap: 12px;
+  }
+
+  .nav__brand,
+  .nav__lang {
+    flex: 0 0 auto;
+    white-space: nowrap;
+  }
+
+  .nav__links {
+    order: 0;
+    flex: 0 1 auto;
+    width: auto;
+    min-width: 0;
+    gap: 12px;
+    overflow: visible;
+    font-size: 10px;
+  }
+
+  .nav__links a {
+    white-space: nowrap;
+  }
+}
