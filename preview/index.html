@@ -184,30 +184,48 @@ footer {
 <section class="hero wrap"><div class="hero-copy"><h1>Недвижимость на&nbsp;Северном&nbsp;Кипре</h1></div><figure class="hero-image"><img src="https://tianacyprus.com/assets/img/hero.jpg" alt="Белая терраса у Средиземного моря"></figure></section>
 <section class="about section wrap" id="about"><figure class="about-image"><img src="https://tianacyprus.com/assets/img/tiana-full.jpg" alt="Тиана"></figure><div class="about-copy"><div class="label">ТИАНА</div><h2>Сначала — понять вашу задачу.</h2><p>На Северном Кипре проекты отличаются расположением, форматом и условиями покупки. Я помогу разобраться в вариантах и выбрать то, что подходит именно вам.</p></div></section>
 <section class="work section wrap" id="work"><div class="work-intro"><h2>Как я работаю</h2><p>Начинаем с разговора. Обсудим, для чего вам нужна недвижимость, что для вас важно и на какой бюджет вы ориентируетесь.</p></div><div class="work-list"><article class="work-step"><span class="work-number">01 /</span><h3>Подбор проектов</h3><p>Подберу варианты под ваш запрос и объясню различия в расположении, сроках и условиях покупки.</p></article><article class="work-step"><span class="work-number">02 /</span><h3>Знакомство с островом</h3><p>Если вы решите приехать, помогу организовать встречу в офисе и знакомство с выбранными проектами.</p></article><article class="work-step"><span class="work-number">03 /</span><h3>Выбор недвижимости</h3><p>Сравним варианты, обсудим ваши вопросы и определим следующий шаг.</p></article><article class="work-step"><span class="work-number">04 /</span><h3>Покупка и сопровождение</h3><p>После выбора проекта компания сопровождает сделку и помогает с вопросами после покупки. Я остаюсь на связи.</p></article></div></section>
-<section class="projects section wrap" id="projects">
-  <div class="projects-head"><h2>Выбранные проекты</h2></div>
-  <div class="project-stories">
-    <article class="project-entry project-entry--one" data-project-key="project-01">
-      <figure class="project-image"><img src="https://tianacyprus.com/assets/img/project-01.jpg" alt="Жилой комплекс у моря"></figure>
-      <div class="project-caption"><h3>Название уточняется</h3></div>
-    </article>
-    <article class="project-entry project-entry--two" data-project-key="project-04">
-      <figure class="project-image"><img src="https://tianacyprus.com/assets/img/project-04.jpg" alt="Комплекс с бассейном"></figure>
-      <div class="project-caption"><h3>Название уточняется</h3></div>
-    </article>
-    <article class="project-entry project-entry--three" data-project-key="project-02">
-      <figure class="project-image"><img src="https://tianacyprus.com/assets/img/project-02.jpg" alt="Виллы у побережья"></figure>
-      <div class="project-caption"><h3>Название уточняется</h3></div>
-    </article>
-    <article class="project-entry project-entry--four" data-project-key="project-03">
-      <figure class="project-image"><img src="https://tianacyprus.com/assets/img/project-03.jpg" alt="Вид на жилой комплекс"></figure>
-      <div class="project-caption"><h3>Название уточняется</h3></div>
-    </article>
+<section class="projects section wrap projects-strip" id="projects">
+  <div class="projects-head">
+    <h2>Проекты</h2>
+    <a class="projects-all" href="/projects/">Смотреть все ↗</a>
+  </div>
+  <div class="projects-carousel" role="region" aria-label="Проекты" tabindex="0">
+    <figure class="project-slide"><img src="./assets/projects/seafront.jpg" alt="Seafront" loading="lazy"><figcaption>Seafront</figcaption></figure>
+    <figure class="project-slide"><img src="./assets/projects/acol-marin.jpg" alt="Acol Marin" loading="lazy"><figcaption>Acol Marin</figcaption></figure>
+    <figure class="project-slide"><img src="./assets/projects/salamis.jpg" alt="Salamis" loading="lazy"><figcaption>Salamis</figcaption></figure>
+    <figure class="project-slide"><img src="./assets/projects/dolce-vita.jpg" alt="Dolce Vita" loading="lazy"><figcaption>Dolce Vita</figcaption></figure>
+    <figure class="project-slide"><img src="./assets/projects/esentepe-exclusive.jpg" alt="Esentepe Exclusive" loading="lazy"><figcaption>Esentepe Exclusive</figcaption></figure>
+    <figure class="project-slide"><img src="./assets/projects/dolce-mare.jpg" alt="Dolce Mare" loading="lazy"><figcaption>Dolce Mare</figcaption></figure>
   </div>
 </section>
 <section class="island-copy wrap" id="cyprus"><h2>Ритм острова</h2><p>Жить здесь постоянно — не единственный сценарий. Для многих Северный Кипр становится вторым домом, куда возвращаются на несколько месяцев в году.</p></section>
 </main>
 <footer id="contact"><div class="wrap footer-inner"><div class="footer-top"><div class="contacts"><a href="tel:+905356667715">+90 535 666 77 15</a><a href="mailto:tiana.selection@gmail.com">tiana.selection@gmail.com</a></div><nav class="social" aria-label="Социальные сети"><a href="https://wa.me/905356667715">WhatsApp</a><a href="https://t.me/+905356667715">Telegram</a><a href="https://www.instagram.com/tianacyprus/">Instagram</a></nav></div><div class="footer-bottom"><span>North Cyprus</span><span>© Tiana Cyprus 2026</span></div></div></footer>
+
+<style>
+/* Preview-only project carousel */
+.projects-strip.projects.section{padding-top:clamp(44px,5.5vw,78px);padding-bottom:clamp(84px,10vw,144px)}
+.projects-strip .projects-head{display:flex;justify-content:space-between;align-items:baseline;gap:24px;border:0;padding:0;margin:0 0 26px}
+.projects-strip .projects-head h2{font:400 clamp(28px,2.5vw,36px)/1.2 "Golos Text",sans-serif;letter-spacing:-.02em;margin:0}
+.projects-all{flex:none;color:var(--soft);font:400 14px/1.4 "Golos Text",sans-serif;letter-spacing:0;white-space:nowrap}
+.projects-carousel{display:flex;gap:24px;overflow-x:auto;overscroll-behavior-x:contain;scroll-snap-type:x mandatory;scroll-behavior:smooth;-webkit-overflow-scrolling:touch;scrollbar-width:thin;scrollbar-color:#c9cdca transparent;padding-bottom:8px}
+.projects-carousel::-webkit-scrollbar{height:4px}
+.projects-carousel::-webkit-scrollbar-track{background:transparent}
+.projects-carousel::-webkit-scrollbar-thumb{background:#c9cdca}
+.project-slide{flex:0 0 calc((100% - 48px)/3);min-width:0;margin:0;scroll-snap-align:start}
+.project-slide img{display:block;width:100%;height:auto;aspect-ratio:1.42;object-fit:cover}
+.project-slide figcaption{padding-top:12px;color:var(--ink);font:400 18px/1.35 "Golos Text",sans-serif;letter-spacing:-.01em}
+@media(max-width:760px){
+ .projects-strip.projects.section{padding-top:40px;padding-bottom:76px}
+ .projects-strip .projects-head{margin-bottom:20px}
+ .projects-strip .projects-head h2{font-size:28px}
+ .projects-all{font-size:13px}
+ .projects-carousel{gap:16px;margin-right:calc(-1 * var(--gutter));padding-right:var(--gutter);scroll-padding-left:0}
+ .project-slide{flex-basis:82%}
+ .project-slide img{aspect-ratio:1.34}
+ .project-slide figcaption{padding-top:10px;font-size:17px}
+}
+</style>
 </body></html>
 
 <style>
