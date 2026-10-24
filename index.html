@@ -200,7 +200,7 @@ footer {
 </section>
 <section class="island-copy wrap" id="cyprus"><h2>Ритм острова</h2><p>Жить здесь постоянно — не единственный сценарий. Для многих Северный Кипр становится вторым домом, куда возвращаются на несколько месяцев в году.</p></section>
 </main>
-<footer id="contact"><div class="wrap footer-inner"><div class="footer-top"><div class="contacts"><a href="tel:+905356667715">+90 535 666 77 15</a><a href="mailto:tiana.selection@gmail.com">tiana.selection@gmail.com</a></div><nav class="social" aria-label="Социальные сети"><a href="https://wa.me/905356667715">WhatsApp</a><a href="https://t.me/+905356667715">Telegram</a><a href="https://www.instagram.com/tianacyprus/">Instagram</a></nav></div><div class="footer-bottom"><span>© Tiana Cyprus 2026</span></div></div></footer>
+<footer id="contact"><div class="wrap footer-inner"><div class="footer-top"><div class="footer-name">TIANA CYPRUS</div><div class="contacts"><a class="contact-phone" href="tel:+905356667715">+90 535 666 77 15</a><a class="contact-email" href="mailto:tiana.selection@gmail.com">tiana.selection@gmail.com</a></div><nav class="social" aria-label="Социальные сети"><a href="https://wa.me/905356667715">WhatsApp</a><a href="https://t.me/+905356667715">Telegram</a><a href="https://www.instagram.com/tianacyprus/">Instagram</a></nav></div><div class="footer-bottom"><span>© Tiana Cyprus 2026</span></div></div></footer>
 
 <style>
 /* Preview-only project carousel */
@@ -483,5 +483,92 @@ footer#contact .footer-bottom {
     max-width: 100%;
     font-size: 12px;
   }
+}
+
+/* Editorial rhythm and coast footer */
+.projects-strip.projects.section {
+  padding-bottom: clamp(68px, 8vw, 112px);
+}
+.island-copy.wrap {
+  padding-block-start: clamp(54px, 5vw, 72px);
+}
+footer#contact {
+  height: 100vw;
+  min-height: 100vw;
+  max-height: none;
+  padding: 32px 0 24px;
+  background: url('https://tianacyprus.com/assets/img/cyprus-coast.jpg') center center / cover no-repeat;
+  color: #fff;
+}
+footer#contact .footer-top {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-end;
+  gap: 10px;
+}
+footer#contact .footer-name {
+  color: #fff;
+  font: 400 10px/1.4 "Golos Text", sans-serif;
+  letter-spacing: .16em;
+}
+footer#contact .contacts {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 3px;
+  font-family: "Golos Text", sans-serif;
+  flex-wrap: nowrap;
+}
+footer#contact .contact-phone {
+  color: #fff;
+  font: 400 18px/1.35 "Golos Text", sans-serif;
+  letter-spacing: -.01em;
+  white-space: nowrap;
+}
+footer#contact .contact-email {
+  color: rgba(255,255,255,.92);
+  font: 400 14px/1.5 "Golos Text", sans-serif;
+  white-space: nowrap;
+}
+footer#contact .social {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 0;
+  white-space: nowrap;
+  color: #fff;
+  font: 400 12px/1.5 "Golos Text", sans-serif;
+  letter-spacing: .02em;
+  text-transform: none;
+}
+footer#contact .social a + a::before {
+  content: "·";
+  display: inline-block;
+  margin: 0 9px;
+  color: rgba(255,255,255,.82);
+}
+footer#contact .footer-bottom {
+  display: block;
+  margin-top: 20px;
+  padding: 0;
+  border: 0;
+  color: rgba(255,255,255,.82);
+  font: 400 10px/1.4 "Golos Text", sans-serif;
+  letter-spacing: .04em;
+}
+@media (max-width: 760px) {
+  .about.section { padding-bottom: 80px; }
+  .work-step { gap: 5px; padding: 13px 0; }
+  .projects-strip.projects.section { padding-bottom: 60px; }
+  .island-copy.wrap { padding-block-start: 54px; }
+  footer#contact {
+    height: auto;
+    min-height: 560px;
+    padding: 32px 0 22px;
+    background-position: center 55%;
+  }
+  footer#contact .footer-top { gap: 9px; }
+  footer#contact .footer-bottom { margin-top: 18px; }
 }
 </style>
