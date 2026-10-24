@@ -598,49 +598,70 @@ footer#contact .social svg .icon-dot { fill: currentColor; stroke: none; }
   footer#contact {
     position: relative;
     display: block;
-    height: clamp(400px, 31.25vw, 500px);
+    height: clamp(480px, 39vw, 560px);
     min-height: 0;
     max-height: none;
     padding: 0;
     overflow: hidden;
     color: #F5F7F7;
-    background: #687A84;
-  }
-  footer#contact::after {
-    content: "";
-    position: absolute;
-    inset: 0 0 0 auto;
-    width: 55%;
-    background: url("https://tianacyprus.com/assets/img/cyprus-coast.jpg") center 55% / cover no-repeat;
+    background-color: #687A84;
+    background-image:
+      linear-gradient(to top,
+        rgba(15,22,25,.72) 0%,
+        rgba(15,22,25,.52) 20%,
+        rgba(15,22,25,.24) 43%,
+        rgba(15,22,25,0) 78%),
+      url("https://tianacyprus.com/assets/img/cyprus-coast.jpg");
+    background-size: cover;
+    background-position: center 54%;
+    background-repeat: no-repeat;
   }
   footer#contact .footer-inner {
     position: relative;
     z-index: 1;
     display: grid;
     grid-template-rows: minmax(0, 1fr) auto;
-    width: 45%;
+    width: 100%;
     height: 100%;
-    max-width: none;
-    margin: 0;
-    padding: 36px var(--gutter) 24px;
+    max-width: 1600px;
+    margin: 0 auto;
+    padding: 0 var(--gutter) 24px;
     box-sizing: border-box;
   }
   footer#contact .footer-top {
+    display: grid;
+    grid-template-columns: minmax(0, 1fr) auto;
+    grid-template-rows: auto auto;
+    column-gap: 32px;
+    row-gap: 8px;
+    align-items: end;
+    align-self: end;
+    margin-bottom: 26px;
+    min-width: 0;
+  }
+  footer#contact .footer-top .contacts {
+    grid-column: 1;
+    grid-row: 1;
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    justify-content: center;
-    gap: 12px;
-    min-width: 0;
+    gap: 3px;
   }
-  footer#contact .footer-top .contacts { order: 1; display: flex; flex-direction: column; align-items: flex-start; gap: 4px; }
-  footer#contact .footer-top .social { order: 2; display: flex; align-items: center; gap: 2px; }
+  footer#contact .footer-top .social {
+    grid-column: 1;
+    grid-row: 2;
+    display: flex;
+    align-items: center;
+    gap: 2px;
+  }
   footer#contact .footer-top .footer-name {
-    order: 3;
-    margin-top: 2px;
+    grid-column: 2;
+    grid-row: 1 / 3;
+    align-self: end;
     color: #F5F7F7;
-    font: 400 13px/1.4 "Golos Text", sans-serif;
+    font: 400 clamp(13px, 1.1vw, 16px)/1.4 "Golos Text", sans-serif;
     letter-spacing: .1em;
+    white-space: nowrap;
   }
   footer#contact .contact-phone {
     color: #F5F7F7;
@@ -648,16 +669,17 @@ footer#contact .social svg .icon-dot { fill: currentColor; stroke: none; }
     white-space: nowrap;
   }
   footer#contact .contact-email {
-    color: rgba(245,247,247,.9);
-    font: 400 14px/1.5 "Golos Text", sans-serif;
+    color: rgba(245,247,247,.92);
+    font: 400 15px/1.5 "Golos Text", sans-serif;
     white-space: nowrap;
   }
   footer#contact .footer-bottom {
     display: block;
+    width: 100%;
     margin: 0;
     padding: 13px 0 0;
-    border-top: 1px solid rgba(245,247,247,.3);
-    color: rgba(245,247,247,.82);
+    border-top: 1px solid rgba(245,247,247,.4);
+    color: rgba(245,247,247,.88);
     font: 400 10px/1.4 "Golos Text", sans-serif;
     letter-spacing: .06em;
   }
