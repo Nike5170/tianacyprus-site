@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Tiana Cyprus — превью футера</title>
+<style>
+html, body { margin: 0; width: 100%; height: 100%; background: #fff; }
+iframe { display: block; width: 100%; height: 100vh; border: 0; }
+</style>
+</head>
+<body>
+<iframe id="preview" title="Предпросмотр главной страницы Tiana Cyprus" src="/preview/footer-foot-nav-20261025.html?rev=44528f750dc0bcd6c06de393082bfd6b7c5c726f#contact"></iframe>
+<script>
+(() => {
+  const frame = document.getElementById("preview");
+  function applyGradient() {
+    const doc = frame.contentDocument;
+    if (!doc || !doc.body || doc.getElementById("footer-gradient-preview")) return;
+    const style = doc.createElement("style");
+    style.id = "footer-gradient-preview";
+    style.textContent = `
+      @media (min-width: 761px) {
+        #contact .footer-photo.footer-photo::after {
+          background: linear-gradient(
+            to bottom,
+            rgba(0, 0, 0, .09) 0%,
+            rgba(0, 0, 0, .10) 25%,
+            rgba(0, 0, 0, .115) 50%,
+            rgba(0, 0, 0, .135) 66%,
+            rgba(0, 0, 0, .17) 88%,
+            rgba(0, 0, 0, .17) 100%
+          ) !important;
+        }
+      }
+    `;
+    doc.body.appendChild(style);
+  }
+  frame.addEventListener("load", applyGradient);
+})();
+</script>
+</body>
+</html>
