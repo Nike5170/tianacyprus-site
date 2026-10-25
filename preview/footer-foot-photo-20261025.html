@@ -178,55 +178,6 @@ footer {
 }
 
 </style>
-<style>
-/* Separate desktop preview: final user-supplied footer photo */
-@media (min-width: 761px) {
-  footer#contact.footer-one-image {
-    height: auto !important;
-    min-height: 0 !important;
-    padding: 0 !important;
-    overflow: hidden;
-  }
-  footer#contact .footer-main {
-    height: clamp(480px, 36.11vw, 540px) !important;
-  }
-  footer#contact .footer-photo img {
-    object-fit: cover !important;
-    object-position: 50% 72% !important;
-    filter: none !important;
-  }
-  footer#contact .footer-photo::after { content: none !important; }
-  footer#contact .footer-contacts a,
-  footer#contact .footer-info .social,
-  footer#contact .footer-info .social a,
-  footer#contact .footer-info .social svg {
-    color: #fff !important;
-  }
-  footer#contact .footer-contacts a:first-child,
-  footer#contact .footer-contacts a:last-child {
-    color: #fff !important;
-    font-family: "Golos Text", sans-serif !important;
-    font-weight: 400 !important;
-  }
-  footer#contact .footer-info .social svg {
-    stroke: currentColor !important;
-    fill: none !important;
-  }
-  footer#contact .footer-info .social svg .icon-dot { fill: currentColor !important; }
-  footer#contact .footer-brand {
-    color: #fff !important;
-    font-family: "Golos Text", sans-serif !important;
-    font-weight: 400 !important;
-    margin-bottom: 138px !important;
-  }
-  footer#contact .footer-legal {
-    color: rgba(255,255,255,.94) !important;
-    border-color: rgba(255,255,255,.42) !important;
-    font-family: "Golos Text", sans-serif !important;
-    font-weight: 400 !important;
-  }
-}
-</style>
 </head><body>
 <header class="wrap"><a class="brand" href="#">Tiana Cyprus</a><nav class="nav"><a class="nav-projects" href="#projects">Проекты</a></nav><span class="lang">RU / EN</span></header>
 <main>
@@ -946,6 +897,50 @@ footer#contact .social svg .icon-dot { fill: currentColor; stroke: none; }
     color:rgba(245,247,247,.9);
     font:400 10px/1.4 "Golos Text",sans-serif;
     letter-spacing:.06em;
+  }
+}
+
+/* Separate desktop preview: final user-supplied footer photo */
+@media (min-width: 761px) {
+  footer#contact.footer-one-image {
+    height: auto !important;
+    min-height: 0 !important;
+    padding: 0 !important;
+    overflow: hidden;
+  }
+  footer#contact .footer-main { height: clamp(480px, 36.11vw, 540px) !important; }
+  footer#contact .footer-photo img {
+    object-fit: cover !important;
+    object-position: 50% 72% !important;
+    filter: none !important;
+  }
+  footer#contact .footer-photo::after { content: none !important; }
+  footer#contact .footer-contacts a,
+  footer#contact .footer-info .social,
+  footer#contact .footer-info .social a,
+  footer#contact .footer-info .social svg { color: #fff !important; }
+  footer#contact .footer-contacts a:first-child,
+  footer#contact .footer-contacts a:last-child {
+    color: #fff !important;
+    font-family: "Golos Text", sans-serif !important;
+    font-weight: 400 !important;
+  }
+  footer#contact .footer-info .social svg {
+    stroke: currentColor !important;
+    fill: none !important;
+  }
+  footer#contact .footer-info .social svg .icon-dot { fill: currentColor !important; }
+  footer#contact .footer-brand {
+    color: #fff !important;
+    font-family: "Golos Text", sans-serif !important;
+    font-weight: 400 !important;
+    margin-bottom: 138px !important;
+  }
+  footer#contact .footer-legal {
+    color: rgba(255,255,255,.94) !important;
+    border-color: rgba(255,255,255,.42) !important;
+    font-family: "Golos Text", sans-serif !important;
+    font-weight: 400 !important;
   }
 }
 </style>
