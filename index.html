@@ -269,6 +269,46 @@ footer {
  .project-slide figcaption{padding-top:10px;font-size:17px}
 }
 </style>
+<script>
+(() => {
+  const portrait = document.querySelector(".about-image");
+  const hasTouch = navigator.maxTouchPoints > 0 || "ontouchstart" in window;
+  if (!portrait || !hasTouch) return;
+
+  portrait.setAttribute("role", "button");
+  portrait.setAttribute("tabindex", "0");
+  portrait.setAttribute("aria-pressed", "false");
+  portrait.setAttribute("aria-label", "Показать фотографию в приглушённом цвете");
+
+  const toggleColor = () => {
+    const active = portrait.classList.toggle("is-color");
+    portrait.setAttribute("aria-pressed", String(active));
+    portrait.setAttribute(
+      "aria-label",
+      active ? "Вернуть чёрно-белую фотографию" : "Показать фотографию в приглушённом цвете"
+    );
+  };
+
+  let keyboardActivated = false;
+  portrait.addEventListener("click", (event) => {
+    event.preventDefault();
+    if (event.detail === 0 && keyboardActivated) {
+      keyboardActivated = false;
+      return;
+    }
+    keyboardActivated = false;
+    toggleColor();
+  });
+
+  portrait.addEventListener("keydown", (event) => {
+    if (event.key === "Enter" || event.key === " ") {
+      event.preventDefault();
+      keyboardActivated = true;
+      toggleColor();
+    }
+  });
+})();
+</script>
 </body></html>
 
 <style>
@@ -759,7 +799,7 @@ footer#contact .footer-bottom {
 .hero h1 { animation: hero-title-from-right .9s cubic-bezier(.22,.61,.36,1) both; }
 .about-image img { filter: grayscale(.92); transition: filter 1.2s ease; }
 @media (hover: hover) and (pointer: fine) { .about-image:hover img { filter: grayscale(.25); } }
-@media (hover: none) { .about-image:active img { filter: grayscale(.25); } }
+.about-image.is-color img { filter: grayscale(.25); }
 @media (prefers-reduced-motion: reduce) {
   .hero h1 { animation: none; }
   .about-image img { transition: none; }
