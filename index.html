@@ -799,10 +799,13 @@ footer#contact .footer-bottom {
 .hero h1 { animation: hero-title-from-right .9s cubic-bezier(.22,.61,.36,1) both; }
 @media (max-width: 760px) {
   @keyframes hero-title-from-right-mobile {
-    from { transform: translateX(14px); }
-    to { transform: translateX(0); }
+    from { left: 14px; }
+    to { left: 0; }
   }
-  .hero h1 { animation: hero-title-from-right-mobile .65s cubic-bezier(.22,.61,.36,1) both; }
+  .hero h1 {
+    position: relative;
+    animation: hero-title-from-right-mobile .65s cubic-bezier(.22,.61,.36,1) both;
+  }
 }
 .about-image img { filter: grayscale(.92); transition: filter 1.2s ease; }
 @media (hover: hover) and (pointer: fine) { .about-image:hover img { filter: grayscale(.25); } }
