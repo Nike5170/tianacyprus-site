@@ -3,19 +3,19 @@
   "short_name": "TIANA CYPRUS",
   "icons": [
     {
-      "src": "icon-192.png?v=20261101-final",
+      "src": "icon-192.png?v=20261101-icons-final2",
       "sizes": "192x192",
       "type": "image/png",
       "purpose": "any"
     },
     {
-      "src": "icon-512.png?v=20261101-final",
+      "src": "icon-512.png?v=20261101-icons-final2",
       "sizes": "512x512",
       "type": "image/png",
       "purpose": "any"
     },
     {
-      "src": "web-app-maskable-512.png?v=20261101-final",
+      "src": "web-app-maskable-512.png?v=20261101-icons-final2",
       "sizes": "512x512",
       "type": "image/png",
       "purpose": "maskable"
