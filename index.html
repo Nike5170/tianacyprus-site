@@ -848,14 +848,14 @@ footer#contact .footer-bottom {
   }
   footer#contact .footer-mobile .social svg .icon-dot { fill:#fff !important; stroke:none !important; }
 }
-/* Editorial About composition: centered compact text column */
+/* Editorial About composition: justified journal column */
 .about-copy {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
   gap: 18px;
   width: 100%;
-  max-width: 410px;
+  max-width: 480px;
   margin-inline: auto;
 }
 .about-copy .label {
@@ -866,11 +866,13 @@ footer#contact .footer-bottom {
 }
 .about-note {
   width: 100%;
-  max-width: 410px;
+  max-width: 480px;
   color: var(--soft);
   font: 400 16px/1.48 "Golos Text", sans-serif;
-  text-align: left;
-  hyphens: none;
+  text-align: justify;
+  text-justify: inter-word;
+  hyphens: auto;
+  -webkit-hyphens: auto;
   overflow-wrap: normal;
 }
 .about-note p {
@@ -880,15 +882,18 @@ footer#contact .footer-bottom {
   font: 400 16px/1.48 "Golos Text", sans-serif;
   letter-spacing: 0;
   text-indent: 1.25em;
-  text-align: left;
+  text-align: justify;
+  text-justify: inter-word;
+  hyphens: auto;
+  -webkit-hyphens: auto;
 }
 .about.section { padding-bottom: clamp(52px, 6vw, 76px); }
 @media (max-width: 760px) {
   .about { align-items: start; gap: 24px; }
   .about-copy {
-    width: calc(min(78%, 340px) - 20px);
-    max-width: 320px;
-    margin: 0 0 0 10px;
+    width: 100%;
+    max-width: 480px;
+    margin: 0 auto;
     gap: 16px;
   }
   .about-copy .label { font-size: 10px; }
@@ -896,7 +901,10 @@ footer#contact .footer-bottom {
   .about-note p {
     font-size: 14.5px;
     line-height: 1.46;
-    text-align: left;
+    text-align: justify;
+    text-justify: inter-word;
+    hyphens: auto;
+    -webkit-hyphens: auto;
   }
   .about-note { max-width: 100%; }
   .about.section { padding-bottom: 56px; }
