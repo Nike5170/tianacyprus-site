@@ -848,14 +848,15 @@ footer#contact .footer-bottom {
   }
   footer#contact .footer-mobile .social svg .icon-dot { fill:#fff !important; stroke:none !important; }
 }
-/* Editorial About composition: compact book-like column beside the portrait */
+/* Editorial About composition: centered compact text column */
 .about-copy {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
   gap: 18px;
   width: 100%;
-  max-width: 500px;
+  max-width: 410px;
+  margin-inline: auto;
 }
 .about-copy .label {
   margin: 0;
@@ -865,7 +866,7 @@ footer#contact .footer-bottom {
 }
 .about-note {
   width: 100%;
-  max-width: 500px;
+  max-width: 410px;
   color: var(--soft);
   font: 400 16px/1.48 "Golos Text", sans-serif;
   text-align: left;
@@ -879,23 +880,18 @@ footer#contact .footer-bottom {
   font: 400 16px/1.48 "Golos Text", sans-serif;
   letter-spacing: 0;
   text-indent: 1.25em;
-}
-@media (min-width: 761px) {
-  .about-copy,
-  .about-note { max-width: 500px; }
-  .about-note { text-align: justify; text-justify: inter-word; }
+  text-align: left;
 }
 .about.section { padding-bottom: clamp(52px, 6vw, 76px); }
 @media (max-width: 760px) {
   .about { align-items: start; gap: 24px; }
   .about-copy {
-    width: 100%;
-    max-width: 640px;
+    width: calc(min(78%, 340px) - 20px);
+    max-width: 320px;
+    margin: 0 0 0 10px;
     gap: 16px;
   }
-  .about-copy .label {
-    font-size: 10px;
-  }
+  .about-copy .label { font-size: 10px; }
   .about-note,
   .about-note p {
     font-size: 14.5px;
