@@ -227,7 +227,7 @@ footer {
     <figure class="project-slide"><img src="/preview/assets/projects/seafront.jpg" alt="Seafront" loading="lazy"><figcaption>Seafront</figcaption></figure>
   </div>
 </section>
-<section class="island-copy wrap" id="cyprus"><h2>Ритм острова</h2><p>Жить здесь постоянно — не единственный сценарий. Для многих Северный Кипр становится вторым домом, куда возвращаются на несколько месяцев в году.</p></section>
+<section class="island-copy wrap" id="cyprus"><h2>РИТМ ОСТРОВА</h2><p>Жить здесь постоянно — не единственный сценарий. Для многих Северный Кипр становится вторым домом, куда возвращаются на несколько месяцев в году.</p></section>
 </main>
 <footer id="contact" class="footer-one-image">
 <div class="footer-desktop" aria-label="Контакты TIANA CYPRUS">
@@ -892,12 +892,20 @@ footer#contact .footer-bottom {
   hyphenate-limit-lines: 1;
 }
 .about.section { padding-bottom: clamp(52px, 6vw, 76px); }
+.island-copy h2 {
+  margin: 0;
+  font: 400 10px/1.35 var(--sans);
+  letter-spacing: .14em;
+  text-transform: uppercase;
+  color: var(--soft);
+}
+
 @media (max-width: 760px) {
   .about { align-items: start; gap: 24px; }
   .about-copy {
     width: min(310px, calc(100vw - 48px));
     max-width: 310px;
-    margin-inline: auto;
+    margin-inline: 0;
     gap: 16px;
   }
   .about-copy .label { font-size: 10px; }
@@ -914,5 +922,8 @@ footer#contact .footer-bottom {
   .about-note p { text-indent: 1em; }
   .about-note { max-width: 100%; }
   .about.section { padding-bottom: 56px; }
+  .island-copy { gap: 10px; }
+  .island-copy.wrap { padding-block-start: 38px; }
+  .island-copy p { text-align: left; }
 }
 </style>
