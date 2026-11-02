@@ -848,14 +848,14 @@ footer#contact .footer-bottom {
   }
   footer#contact .footer-mobile .social svg .icon-dot { fill:#fff !important; stroke:none !important; }
 }
-/* Editorial About composition: justified journal column */
+/* Editorial About composition: justified journal column with restrained Russian hyphenation */
 .about-copy {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
   gap: 18px;
   width: 100%;
-  max-width: 480px;
+  max-width: 500px;
   margin-inline: auto;
 }
 .about-copy .label {
@@ -866,13 +866,15 @@ footer#contact .footer-bottom {
 }
 .about-note {
   width: 100%;
-  max-width: 480px;
+  max-width: 500px;
   color: var(--soft);
   font: 400 16px/1.48 "Golos Text", sans-serif;
   text-align: justify;
   text-justify: inter-word;
   hyphens: auto;
   -webkit-hyphens: auto;
+  hyphenate-limit-chars: 8 4 4;
+  hyphenate-limit-lines: 1;
   overflow-wrap: normal;
 }
 .about-note p {
@@ -886,14 +888,16 @@ footer#contact .footer-bottom {
   text-justify: inter-word;
   hyphens: auto;
   -webkit-hyphens: auto;
+  hyphenate-limit-chars: 8 4 4;
+  hyphenate-limit-lines: 1;
 }
 .about.section { padding-bottom: clamp(52px, 6vw, 76px); }
 @media (max-width: 760px) {
   .about { align-items: start; gap: 24px; }
   .about-copy {
-    width: 100%;
+    width: min(calc(100vw - 36px), 480px);
     max-width: 480px;
-    margin: 0 auto;
+    margin: 0 0 0 calc((100vw - min(calc(100vw - 36px), 480px)) / 2 - var(--gutter));
     gap: 16px;
   }
   .about-copy .label { font-size: 10px; }
@@ -905,6 +909,8 @@ footer#contact .footer-bottom {
     text-justify: inter-word;
     hyphens: auto;
     -webkit-hyphens: auto;
+    hyphenate-limit-chars: 8 4 4;
+    hyphenate-limit-lines: 1;
   }
   .about-note { max-width: 100%; }
   .about.section { padding-bottom: 56px; }
