@@ -851,7 +851,7 @@ footer#contact .footer-bottom {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  gap: 16px;
+  gap: 12px;
   width: 100%;
   max-width: 640px;
 }
@@ -864,7 +864,8 @@ footer#contact .footer-bottom {
 .about-copy h2 {
   max-width: 600px;
   margin: 0;
-  font: 400 clamp(30px, 2.6vw, 38px)/1.23 "Golos Text", sans-serif;
+  color: var(--ink);
+  font: 500 clamp(24px, 1.9vw, 28px)/1.2 "Golos Text", sans-serif;
   letter-spacing: -.02em;
   white-space: normal;
 }
@@ -872,23 +873,28 @@ footer#contact .footer-bottom {
   max-width: 560px;
   margin: 0;
   color: var(--soft);
-  font: 400 16px/1.65 "Golos Text", sans-serif;
+  font: 400 16px/1.58 "Golos Text", sans-serif;
 }
 .about.section { padding-bottom: clamp(52px, 6vw, 76px); }
 @media (max-width: 760px) {
   .about { align-items: start; gap: 24px; }
-  .about-copy { max-width: 360px; gap: 13px; }
+  .about-copy {
+    width: min(78%, 340px);
+    max-width: 340px;
+    gap: 11px;
+  }
   .about-copy .label { font-size: 10px; }
   .about-copy h2 {
     max-width: 100%;
-    font-size: clamp(24px, 6.2vw, 28px);
-    line-height: 1.25;
+    font-size: clamp(20px, 5.4vw, 23px);
+    line-height: 1.2;
+    letter-spacing: -.015em;
     white-space: normal;
   }
   .about-copy p {
-    max-width: 340px;
+    max-width: 100%;
     font-size: 15px;
-    line-height: 1.65;
+    line-height: 1.55;
   }
   .about.section { padding-bottom: 56px; }
 }
