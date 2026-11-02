@@ -197,8 +197,20 @@ footer {
 <header class="wrap"><a class="brand" href="#">Tiana Cyprus</a><nav class="nav"><a class="nav-projects" href="#projects">Проекты</a></nav><span class="lang">RU / EN</span></header>
 <main>
 <section class="hero wrap"><div class="hero-copy"><h1>Недвижимость на&nbsp;Северном&nbsp;Кипре</h1></div><figure class="hero-image"><img src="https://tianacyprus.com/assets/img/hero.jpg" alt="Белая терраса у Средиземного моря"></figure></section>
-<section class="about section wrap" id="about"><figure class="about-image"><img src="https://tianacyprus.com/assets/img/tiana-full.jpg" alt="Тиана"></figure><div class="about-copy"><div class="label">ТИАНА</div><h2>Сначала — понять вашу задачу.</h2><p>На Северном Кипре проекты отличаются расположением, форматом и условиями покупки. Я помогу разобраться в вариантах и выбрать то, что подходит именно вам.</p></div></section>
-<section class="work section wrap" id="work"><div class="work-intro"><h2>Как я работаю</h2><p>Начинаем с разговора. Обсудим, для чего вам нужна недвижимость, что для вас важно и на какой бюджет вы ориентируетесь.</p></div><div class="work-list"><article class="work-step"><span class="work-number">01 /</span><h3>Подбор проектов</h3><p>Подберу варианты под ваш запрос и объясню различия в расположении, сроках и условиях покупки.</p></article><article class="work-step"><span class="work-number">02 /</span><h3>Знакомство с островом</h3><p>Если вы решите приехать, помогу организовать встречу в офисе и знакомство с выбранными проектами.</p></article><article class="work-step"><span class="work-number">03 /</span><h3>Выбор недвижимости</h3><p>Сравним варианты, обсудим ваши вопросы и определим следующий шаг.</p></article><article class="work-step"><span class="work-number">04 /</span><h3>Покупка и сопровождение</h3><p>После выбора проекта компания сопровождает сделку и помогает с вопросами после покупки. Я остаюсь на связи.</p></article></div></section>
+<section class="about section wrap" id="about">
+  <figure class="about-image">
+    <img src="https://tianacyprus.com/assets/img/tiana-full.jpg" alt="Тиана">
+  </figure>
+  <div class="about-copy">
+    <div class="label">ТИАНА</div>
+    <h2>Хорошая недвижимость начинается с понимания того, зачем она вам нужна.</h2>
+    <p>На Северном Кипре проекты отличаются не только расположением и архитектурой. Важны сроки, условия покупки и то, насколько объект соответствует вашим планам.</p>
+    <p>Я начинаю с разговора, затем сравниваю подходящие проекты и помогаю отсеять лишнее.</p>
+    <p>Если вы решите приехать, я помогу организовать знакомство с островом и выбранными проектами.</p>
+    <p>Я сопровождаю вас на каждом этапе — от выбора недвижимости до оформления сделки и после покупки.</p>
+  </div>
+</section>
+
 <section class="projects section wrap projects-strip" id="projects">
   <div class="projects-head">
     <h2>Проекты</h2>
@@ -834,5 +846,51 @@ footer#contact .footer-bottom {
     stroke-linejoin:round !important; opacity:1 !important; filter:none !important;
   }
   footer#contact .footer-mobile .social svg .icon-dot { fill:#fff !important; stroke:none !important; }
+}
+/* Editorial About composition: one portrait and one continuous text column */
+.about-copy {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 16px;
+  width: 100%;
+  max-width: 640px;
+}
+.about-copy .label {
+  margin: 0;
+  color: var(--soft);
+  font: 400 10px/1.35 "Golos Text", sans-serif;
+  letter-spacing: .16em;
+}
+.about-copy h2 {
+  max-width: 600px;
+  margin: 0;
+  font: 400 clamp(30px, 2.6vw, 38px)/1.23 "Golos Text", sans-serif;
+  letter-spacing: -.02em;
+  white-space: normal;
+}
+.about-copy p {
+  max-width: 560px;
+  margin: 0;
+  color: var(--soft);
+  font: 400 16px/1.65 "Golos Text", sans-serif;
+}
+.about.section { padding-bottom: clamp(52px, 6vw, 76px); }
+@media (max-width: 760px) {
+  .about { align-items: start; gap: 24px; }
+  .about-copy { max-width: 360px; gap: 13px; }
+  .about-copy .label { font-size: 10px; }
+  .about-copy h2 {
+    max-width: 100%;
+    font-size: clamp(24px, 6.2vw, 28px);
+    line-height: 1.25;
+    white-space: normal;
+  }
+  .about-copy p {
+    max-width: 340px;
+    font-size: 15px;
+    line-height: 1.65;
+  }
+  .about.section { padding-bottom: 56px; }
 }
 </style>
