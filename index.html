@@ -203,11 +203,13 @@ footer {
   </figure>
   <div class="about-copy">
     <div class="label">ТИАНА</div>
-    <h2>Хорошая недвижимость начинается с понимания того, зачем она вам нужна.</h2>
-    <p>На Северном Кипре проекты отличаются не только расположением и архитектурой. Важны сроки, условия покупки и то, насколько объект соответствует вашим планам.</p>
-    <p>Я начинаю с разговора, затем сравниваю подходящие проекты и помогаю отсеять лишнее.</p>
-    <p>Если вы решите приехать, я помогу организовать знакомство с островом и выбранными проектами.</p>
-    <p>Я сопровождаю вас на каждом этапе — от выбора недвижимости до оформления сделки и после покупки.</p>
+    <div class="about-note">
+      <p class="about-intro">Хорошая недвижимость начинается с понимания того, зачем она вам нужна.</p>
+      <p>На Северном Кипре проекты отличаются не только расположением и архитектурой. Важны сроки, условия покупки и то, насколько объект соответствует вашим планам.</p>
+      <p>Я начинаю с разговора, затем сравниваю подходящие проекты и помогаю отсеять лишнее.</p>
+      <p>Если вы решите приехать, я помогу организовать знакомство с островом и выбранными проектами.</p>
+      <p>Я сопровождаю вас на каждом этапе — от выбора недвижимости до оформления сделки и после покупки.</p>
+    </div>
   </div>
 </section>
 
@@ -861,19 +863,31 @@ footer#contact .footer-bottom {
   font: 400 10px/1.35 "Golos Text", sans-serif;
   letter-spacing: .16em;
 }
-.about-copy h2 {
-  max-width: 600px;
-  margin: 0 0 12px;
-  color: var(--ink);
-  font: 400 clamp(24px, 1.8vw, 26px)/1.33 "Golos Text", sans-serif;
-  letter-spacing: -.015em;
-  white-space: normal;
-}
-.about-copy p {
-  max-width: 560px;
-  margin: 0;
+.about-note {
+  width: 100%;
+  max-width: 640px;
   color: var(--soft);
-  font: 400 16px/1.52 "Golos Text", sans-serif;
+  font: 400 16px/1.48 "Golos Text", sans-serif;
+  text-align: justify;
+  hyphens: auto;
+  overflow-wrap: normal;
+}
+.about-note p {
+  max-width: 100%;
+  margin: 0;
+  color: inherit;
+  font: inherit;
+  text-indent: 1.25em;
+}
+.about-note .about-intro {
+  margin: 0 0 0;
+  color: var(--ink);
+  font: 400 clamp(18px, 1.35vw, 20px)/1.48 "Golos Text", sans-serif;
+  letter-spacing: -.01em;
+  text-indent: 0;
+}
+.about-note .about-intro + p {
+  text-indent: 0;
 }
 .about.section { padding-bottom: clamp(52px, 6vw, 76px); }
 @media (max-width: 760px) {
@@ -881,24 +895,25 @@ footer#contact .footer-bottom {
   .about-copy {
     width: 100%;
     max-width: 640px;
-    gap: 20px;
+    gap: 16px;
   }
   .about-copy .label {
-    margin-bottom: -4px;
     font-size: 10px;
   }
-  .about-copy h2 {
-    max-width: 100%;
-    margin-bottom: 13px;
-    font-size: clamp(20px, 5.6vw, 22px);
-    line-height: 1.35;
-    letter-spacing: -.015em;
-    white-space: normal;
-  }
-  .about-copy p {
-    max-width: 100%;
+  .about-note {
     font-size: 15px;
-    line-height: 1.53;
+    line-height: 1.5;
+    text-align: left;
+  }
+  .about-note .about-intro {
+    font-size: clamp(17px, 4.8vw, 18px);
+    line-height: 1.4;
+  }
+  .about-note p {
+    text-indent: 1.25em;
+  }
+  .about-note .about-intro + p {
+    text-indent: 0;
   }
   .about.section { padding-bottom: 56px; }
 }
