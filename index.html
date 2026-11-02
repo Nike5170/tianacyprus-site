@@ -848,14 +848,14 @@ footer#contact .footer-bottom {
   }
   footer#contact .footer-mobile .social svg .icon-dot { fill:#fff !important; stroke:none !important; }
 }
-/* Editorial About composition: one portrait and one continuous text column */
+/* Editorial About composition: compact book-like column beside the portrait */
 .about-copy {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
   gap: 18px;
   width: 100%;
-  max-width: 640px;
+  max-width: 500px;
 }
 .about-copy .label {
   margin: 0;
@@ -865,7 +865,7 @@ footer#contact .footer-bottom {
 }
 .about-note {
   width: 100%;
-  max-width: 640px;
+  max-width: 500px;
   color: var(--soft);
   font: 400 16px/1.48 "Golos Text", sans-serif;
   text-align: left;
@@ -880,6 +880,11 @@ footer#contact .footer-bottom {
   letter-spacing: 0;
   text-indent: 1.25em;
 }
+@media (min-width: 761px) {
+  .about-copy,
+  .about-note { max-width: 500px; }
+  .about-note { text-align: justify; text-justify: inter-word; }
+}
 .about.section { padding-bottom: clamp(52px, 6vw, 76px); }
 @media (max-width: 760px) {
   .about { align-items: start; gap: 24px; }
@@ -893,9 +898,11 @@ footer#contact .footer-bottom {
   }
   .about-note,
   .about-note p {
-    font-size: 15px;
-    line-height: 1.5;
+    font-size: 14.5px;
+    line-height: 1.46;
+    text-align: left;
   }
+  .about-note { max-width: 100%; }
   .about.section { padding-bottom: 56px; }
 }
 </style>
