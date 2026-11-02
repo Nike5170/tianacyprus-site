@@ -895,9 +895,9 @@ footer#contact .footer-bottom {
 @media (max-width: 760px) {
   .about { align-items: start; gap: 24px; }
   .about-copy {
-    width: min(calc(100vw - 36px), 480px);
+    width: min(480px, calc(100vw - 76px));
     max-width: 480px;
-    margin: 0 0 0 calc((100vw - min(calc(100vw - 36px), 480px)) / 2 - var(--gutter));
+    margin: 0 0 0 calc((100vw - min(480px, calc(100vw - 76px))) / 2 - var(--gutter));
     gap: 16px;
   }
   .about-copy .label { font-size: 10px; }
@@ -909,9 +909,11 @@ footer#contact .footer-bottom {
     text-justify: inter-word;
     hyphens: auto;
     -webkit-hyphens: auto;
-    hyphenate-limit-chars: 8 4 4;
+    hyphenate-limit-chars: 9 4 4;
     hyphenate-limit-lines: 1;
+    text-wrap: pretty;
   }
+  .about-note p { text-indent: 1em; }
   .about-note { max-width: 100%; }
   .about.section { padding-bottom: 56px; }
 }
