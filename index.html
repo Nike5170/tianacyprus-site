@@ -895,23 +895,21 @@ footer#contact .footer-bottom {
 @media (max-width: 760px) {
   .about { align-items: start; gap: 24px; }
   .about-copy {
-    width: min(480px, calc(100vw - 76px));
-    max-width: 480px;
-    margin: 0 0 0 calc((100vw - min(480px, calc(100vw - 76px))) / 2 - var(--gutter));
+    width: min(310px, calc(100vw - 48px));
+    max-width: 310px;
+    margin-inline: auto;
     gap: 16px;
   }
   .about-copy .label { font-size: 10px; }
   .about-note,
   .about-note p {
     font-size: 14.5px;
-    line-height: 1.46;
-    text-align: justify;
+    line-height: 1.43;
+    text-align: left;
     text-align-last: left;
-    text-justify: inter-word;
     hyphens: auto;
     -webkit-hyphens: auto;
     hyphenate-limit-chars: 9 4 4;
-    hyphenate-limit-lines: 2;
     text-wrap: pretty;
   }
   .about-note p { text-indent: 1em; }
