@@ -868,26 +868,17 @@ footer#contact .footer-bottom {
   max-width: 640px;
   color: var(--soft);
   font: 400 16px/1.48 "Golos Text", sans-serif;
-  text-align: justify;
+  text-align: left;
   hyphens: none;
   overflow-wrap: normal;
 }
 .about-note p {
   max-width: 100%;
   margin: 0;
-  color: inherit;
-  font: inherit;
+  color: var(--soft);
+  font: 400 16px/1.48 "Golos Text", sans-serif;
+  letter-spacing: 0;
   text-indent: 1.25em;
-}
-.about-note .about-intro {
-  margin: 0 0 0;
-  color: var(--ink);
-  font: 400 clamp(18px, 1.35vw, 20px)/1.48 "Golos Text", sans-serif;
-  letter-spacing: -.01em;
-  text-indent: 0;
-}
-.about-note .about-intro + p {
-  text-indent: 0;
 }
 .about.section { padding-bottom: clamp(52px, 6vw, 76px); }
 @media (max-width: 760px) {
@@ -900,20 +891,10 @@ footer#contact .footer-bottom {
   .about-copy .label {
     font-size: 10px;
   }
-  .about-note {
+  .about-note,
+  .about-note p {
     font-size: 15px;
     line-height: 1.5;
-    text-align: left;
-  }
-  .about-note .about-intro {
-    font-size: clamp(17px, 4.8vw, 18px);
-    line-height: 1.4;
-  }
-  .about-note p {
-    text-indent: 1.25em;
-  }
-  .about-note .about-intro + p {
-    text-indent: 0;
   }
   .about.section { padding-bottom: 56px; }
 }
